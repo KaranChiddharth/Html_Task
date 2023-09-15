@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            padding-left: 12px;
+
+        }
+
+        a:hover {
+            color: gold;
+        }
+
+        ul li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+
+        .list1 {
+            display: none;
+            position: absolute;
+            top: 23px;
+            right: -2px;
+            background-color: black;
+        }
+
+        .innerlist {
+            position: relative;
+        }
+
+        .innerlist2 {
+            position: relative;
+        }
+
+        .list2 {
+            display: none;
+            position: absolute;
+            top: 6px;
+            right: -129px;
+            left: 85px;
+            background-color: black;
+        }
+
+        .innerlist li {
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+
+        }
+
+        .innerlist:hover .list1 {
+            display: block;
+        }
+        .innerlist2:hover .list2{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li class="innerlist"><a href="#">Webdesign +</a>
+                <ul class="list1">
+                    <li><a href="#">Resource</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li class="innerlist2"><a href="#">Tutorials</a>
+                        <ul class="list2">
+                            <li><a href="#">HTML/CSS</a></li>
+                            <li><a href="#">JQuery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

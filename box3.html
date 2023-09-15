@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>box3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            height: 600px;
+            width: 400px;
+            background-color: aliceblue;
+            margin-top: 70px;
+            margin-left: 510px;
+            border-radius: 10px;
+            position: relative;
+
+        }
+
+        #container1 {
+            height: 250px;
+            width: 400px;
+            background-color: blueviolet;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        #container2 {
+            height: 350px;
+            width: 400px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 0px 0px 10px 10px;
+            padding: 70px;
+            text-align: center;
+        }
+
+        #circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 196px;
+            left: 152px;
+            background-image: url(./image/girl.jpg);
+            background-size: cover;
+
+        }
+
+        #fed {
+            color: purple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #l25 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+        }
+
+        #clara {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #vp {
+            height: 30px;
+            width: 100px;
+            margin-top: 53PX;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 50PX;
+            color: rgb(252, 252, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="circle"></div>
+        <div id="container1"></div>
+        <div id="container2">
+            <h3 id="clara">Clara</h3><br>
+            <h3 id="fed">Front-end Developer</h3><br>
+            <p id="l25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quo cumque nisi nihil dolorem
+                dolorum!</p>
+            <button id="vp">View Profile</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ingredients</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .inlinemart {
+            height: 700px;
+            width: 900px;
+            background-color: black;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #inline {
+            height: 100px;
+            width: 900px;
+            background-image: url(./image/flower2.jpg);
+            background-size: cover;
+            text-align: center;
+            color: red;
+            padding-top: 8px;
+        }
+
+        .mart {
+            height: 500px;
+            width: 900px;
+            background-color: brown;
+
+        }
+
+        #groceries {
+            height: 500px;
+            width: 300px;
+            background-color: rgb(189, 148, 58);
+            float: left;
+            font-size: 21px;
+        }
+
+        #empty {
+            height: 100px;
+            width: 600px;
+            background-color: blueviolet;
+            float: left;
+        }
+
+        #fruits {
+            height: 400px;
+            width: 300px;
+            background-color: aliceblue;
+            background-image: url(./image/fruits.jpg);
+            background-size: cover;
+            float: left;
+        }
+
+        #table {
+            height: 400px;
+            width: 300px;
+            background-color: rgb(59, 198, 68);
+            float: left;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .bottom {
+            height: 100px;
+            width: 900px;
+            background-color: cornflowerblue;
+            text-align: center;
+            color: black;
+        }
+
+        #h4 {
+            padding-top: 25px;
+        }
+
+        #h2 {
+            padding-top: 20px;
+        }
+        ul{
+            padding-left: 30px;
+        }
+        
+        table{
+            height: 400px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inlinemart">
+        <div id="inline">
+            <h1>Inline Mart</h1>
+        </div>
+        <div class="mart">
+            <div id="groceries">
+                <p>All Necessary items like...</p><br>
+                <ul>
+                    <li>Groceries</li>
+                    <li>Beauty products</li>
+                    <ul class="items">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Children</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Bakery items</li>
+                    <li>Cloths</li>
+                    <ul class="items">
+                        <li>Traditional</li>
+                        <li>Western</li>
+                        <li>Casual</li>
+                        <li>party</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>All stationary items</li>
+                    <li>Children products like</li>
+                    <ul class="items">
+                        <li>New born baby products</li>
+                        <li>Toys for all age children</li>
+                        <li>Books</li>
+                        
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Fast Foods and more...</li>
+                </ul>
+                
+            </div>
+            <div id="empty"></div>
+            <div id="fruits"></div>
+            <div id="table">
+                <table border="2">
+                    <th colspan="2">Today offer</th>
+                    <tr>
+                        <td><b>Price(rs.)</b></td>
+                        <td><b>Discount</b></td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>5000 and more...</td>
+                        <td>Get voucher worth 2000rs by lucky draw</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="bottom">
+            <h2 id="h2">WE PROVIDE THE BEST QUALITY ITEMS...</h2>
+            <h4 id="h4">Come and explore our mart...</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

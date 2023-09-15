@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .box1 {
+            height: 700px;
+            width: 900px;
+            background-color: rgb(245, 226, 196);
+            margin-top: 20px;
+            margin-left: 20px;
+            position: relative;
+            text-align: center;
+            color: rgb(0, 0, 0);
+
+
+        }
+
+        .box2 {
+            height: 500px;
+            width: 700px;
+            background-color: rgb(245, 226, 196);
+            position: absolute;
+            top: 122px;
+            left: 98px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        #p1 {
+            font-size: 20px;
+            padding-left: 275px;
+            padding-right: 275px;
+            padding-top: 20px;
+        }
+
+        #h6 {
+            padding-top: 20px;
+        }
+
+        .box2 .cont {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            
+        }
+        #circle{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgb(8, 8, 8);
+            position: absolute;
+            left: 78px;
+            top: 13px;
+            }
+            .cont{
+                position: relative;
+                padding-top: 40px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding-left: 5px;
+                padding-right: 5px;
+                position: relative;
+            }
+            #p{
+                font-size: 12px;
+                padding-top: 10px;
+            }
+            #line{
+                height: 1px;
+                width: 60px;
+                background-color: rgb(17, 15, 15);
+                position: absolute;
+                left: 69px;
+                top: 152px;
+                
+            }
+            button{
+                border-radius: 5px;
+                height: 20px;
+                width: 90px;
+                border: none;
+                position: relative;
+                top: 26px;
+                background-color: orange;
+            }
+            i{
+                color: rgb(255, 255, 255);
+                position: relative;
+                
+                bottom: 18px;
+            }
+            .cont:hover{
+                background-color: orange;
+                border-radius: 5px;
+                border:orange;
+            }
+            .cont:hover button{
+                background-color: white;
+                color: black;
+            }
+            .cont:hover #circle{
+                background-color: white;
+            }
+            .cont:hover i{
+                color: black;
+            }
+            .cont:hover #p{
+                color: white;
+            }
+            .cont:hover h5{
+                color: white;
+            }
+            .cont:hover #line{
+                background-color: white;
+            }
+            
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h6 id="h6">WHAT WE OFFER</h6>
+        <p id="p1">We're the #1 satellite TV service in the country,with over 99% signal<br> reliability</p>
+        <div class="box2">
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-solid fa-tv"></i>
+                <h5>Residential Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-solid fa-wifi"></i>
+                <h5>Enterprise Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-solid fa-medal"></i>
+                <h5>Sports Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h5>Kids Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-solid fa-file"></i>
+                <h5>Documentary Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="cont">
+                <div id="circle"></div>
+                <i class="fa-regular fa-newspaper"></i>
+                <h5>News Channel</h5>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam.</p>
+                <div id="line"></div>
+                <button>Learn more </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

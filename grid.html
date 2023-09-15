@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 480px;
+            width: 500px;
+            background-color: rgb(27, 83, 223);
+            display: grid;
+            grid-template-rows: 120px 140px 100px;
+            grid-template-columns: 100px 195px 195px;
+            gap: 5px 5px;
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+
+        .cont {
+            background-color: rgb(0, 255, 191);
+            border: 3px solid black;
+            margin: 10px;
+            text-align: center;
+            padding-top: 27px;
+            color: rgb(2, 95, 59);
+            font-weight: bold;
+        }
+
+        .container div:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .container div:nth-child(2) {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .container div:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .container div:nth-child(6) {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .cont:hover {
+            background-color: rgb(0, 238, 255);
+            border-color: rgb(241, 239, 239);
+            color: rgb(3, 3, 142);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">Header</div>
+        <div class="cont">Sidebar</div>
+        <div class="cont">Content 1</div>
+        <div class="cont">Content 2</div>
+        <div class="cont">Content 3</div>
+        <div class="cont">Footer</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Gridd</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 620px;
+            width: 1000px;
+            background-color: rgb(148, 91, 0);
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 300px 200px 200px auto;
+            gap: 10px 10px;
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+
+        .cont {
+            background-color: rgb(248, 219, 0);
+            border: 5px solid rgb(1, 1, 2);
+            font-size: 25px;
+            margin: 10px 10px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container div:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .container div:nth-child(2) {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .container div:nth-child(6) {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .cont:hover{
+            background-color: red;
+            border-color: white;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">1</div>
+        <div class="cont">2</div>
+        <div class="cont">3</div>
+        <div class="cont">4</div>
+        <div class="cont">5</div>
+        <div class="cont">6</div>
+        <div class="cont">7</div>
+        <div class="cont">8</div>
+    </div>
+
+</body>
+
+</html>
